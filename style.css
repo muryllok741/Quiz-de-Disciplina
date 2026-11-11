@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e1e1e;
+  color: #e8e8e8;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #4ecdb4;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.progresso {
+  height: 10px;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.barra {
+  width: 0;
+  height: 100%;
+  background-color: #4ecdb4;
+  transition: width 0.3s;
+}
+
+section {
+  padding: 28px;
+  background-color: #262626;
+  border-radius: 16px;
+}
+
+#contador {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+#opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4ecdb4;
+  color: #1e1e1e;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.opcao {
+  padding: 14px 16px;
+  border: 2px solid #3a3a3a;
+  background-color: #161616;
+  color: #e8e8e8;
+  font-weight: normal;
+  text-align: left;
+}
+
+.opcao:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.opcao.certa {
+  border-color: #4ecdb4;
+  background-color: #1d3a34;
+}
+
+.opcao.errada {
+  border-color: #e8685e;
+  background-color: #3d2321;
+}
+
+#pontuacao {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4ecdb4;
+  margin-bottom: 12px;
+}
+
+#mensagem {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px 14px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
